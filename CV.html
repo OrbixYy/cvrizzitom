@@ -1,0 +1,81 @@
+<head>
+  <title>Curriculum vitæ</title>
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="cv_RE.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="js/script.js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+
+<div class="inner-width">
+  <h1>I</h1>
+  <div class="menu-icon">
+    <i class="fas fa-align-right"></i>
+  </div>
+</div>
+</header>
+
+<div class="navigation-menu">
+  <nav>
+    <li><a class="active" href="CV.html">[I] A propos de moi</a></li>
+    <li><a class="active" href="CV-exp.html">[II] Expériences</a></li>
+    <li><a class="active" href="Cv-formation.html">[III] Formations</a></li>
+    <li><a href="CV-Comp.html">[IV] Compétences</a></li>
+    <li><a href="CV-ci.html">[V] Loisirs / CI</a></li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li><a class="rm" href="menu.html">Retourner au menu</a></li>
+  </nav>
+</div>
+
+  <section>
+      <div class="photo">
+          <img src="img/profil.png" alt="Ma photo de profil">
+      </div>
+      <div class="prez">
+          <h2>A propos de moi</h2>
+          <p>Je m'appelle Tom, j'ai 17 ans, je suis actuellement à la recherche d'expériences. Je suis disponible Pour la période de juillet 2022 (uniquement le mois de juillet), j'aime bien le contact avec les clients, je suis assez à l'aise dans la communication et j'apprécie beaucoup l'informatique. J'adore également le sport notamment le VTT et la course à pied. J'adore pareillement entreprendre et organiser des projets, je suis très ambitieux peut-être un peu trop parfois, mais la motivation que j'apporte à chaque projet est considérable !<br>Je ne fais pas les choses à moitié et j'aime bien apprendre de nouvelles choses pour enrichir mon expérience / culture comme le travail d'été que je recherche qui sera certainement riche en apprentissage et réellement bénéfique pour moi. (pour voir les autres catégories vous devez cliquer sur le bouton en haut à droite)</p>
+      </div>
+      <div class="contact">
+          <h2>Informations</h2>
+          <div class="contact-flex">
+              <p>Nom :</p>
+              <p>Rizzi Tom</p>
+          </div>
+          <div class="contact-flex">
+              <p>Téléphone :</p>
+              <p>07.70.02.65.28</p>
+          </div>
+          <div class="contact-flex">
+              <p>Email : </p>
+              <p><a href="rizzitom60@gmail.com">rizzitom60@gmail.com</a></p>
+          </div>
+
+          <script>
+            $(".menu-icon").click(function(){
+              $(this).toggleClass("active");
+              $(".navigation-menu").toggleClass("active");
+              $(".menu-icon i").toggleClass("fa-times");
+            });
+          </script>
+        </body>
+        </html>
+
+ 
